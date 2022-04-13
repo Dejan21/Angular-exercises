@@ -1,11 +1,32 @@
 <mat-toolbar>
-    <p>Cards</p>
-  </mat-toolbar>
+  <p>Cards</p>
+</mat-toolbar>
+
+<form #form="ngForm" (ngSubmit)="onFormSubmit(form)" fxLayout="row wrap" fxLayoutGap="17px grid">
+  <div class="card" *ngFor="let card of cards">
+    <img mat-card-image src="../assets/first.jpg">
+    <div class="card-body">
+      <h5 class="card-title">{{card.name}}</h5>
+      <p class="card-content">{{card.content}}</p>
+      <a href="#" class="btn btn-primary">Edit recipe</a>
+    </div>
+  </div>
+  <input ngModel required minlength="2" name="text" class="input" type="card">
+  <button [disabled]="!isAuth" type="submit" class="button alt-gradient-button">
+
+    <p>Add</p>
   
-   <div class="content"> 
+  </button>
+</form>
+
+
+
+
+<!-- <div class="content"> 
      <div fxLayout="row wrap" fxLayoutGap="16px grid" >
+         <form #form="ngForm" (ngSubmit)="onFormSubmit(form)">
        <div fxFlex="25%" fxFlex.xs="100%" *ngFor="let card of cards">
-        <mat-card class="mat-elevation-z4">
+        <mat-card class="mat-elevation-z4" ngModel name="card">
           <mat-card-header>
             <mat-card-title>{{card.name}} </mat-card-title>
           </mat-card-header>
@@ -18,7 +39,10 @@
               <button>Edit Page</button>
           </mat-card-actions>
        </mat-card>
-       </div>
+        </div>
+        <button type="submit">Add new Recipe</button> 
+       </form>
      </div>
-      
-   </div>
+   
+
+   </div> -->
