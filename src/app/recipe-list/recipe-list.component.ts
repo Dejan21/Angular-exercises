@@ -15,15 +15,11 @@ import { Card } from '../shared/card.module';
 export class RecipeListComponent implements OnInit {
 
   cards: any;
-  showButton: boolean | undefined;
-  isAuth=false;
+  playToggle=false;
+
 
   constructor(private appService: AppService) { 
-    setTimeout(
-      ()=>{
-       this.isAuth=true;
-     }, 5000
-   );
+   
   }
 
   ngOnInit(): void {
@@ -38,5 +34,12 @@ export class RecipeListComponent implements OnInit {
 
   }
 
+
+   goToPage(api:any): void{
+      
+   }
+  
   
 }
+
+

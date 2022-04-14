@@ -12,13 +12,19 @@
     </div>
   </div>
   <input ngModel required minlength="2" name="text" class="input" type="card">
-  <button [disabled]="!isAuth" type="submit" class="button alt-gradient-button">
+  <input type="button" id="btn"  value="Click Me">Add
+  <!-- <button id="btn" (click)="myFunction()" type="submit" class="button alt-gradient-button">
 
     <p>Add</p>
   
-  </button>
+  </button> -->
+  <!-- <div *ngIf="!playToggle">
+    <button (click)="buttonClick();  playToggle = true">
+        <i class="fa fa-play" aria-hidden="true">Add</i>
+    </button>
+</div> -->
 </form>
-
+<button (click)="goToPage('api')" routerLink="./api">Next</button>
 
 
 

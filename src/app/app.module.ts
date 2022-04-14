@@ -10,11 +10,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { ApiComponent } from './api/api.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
