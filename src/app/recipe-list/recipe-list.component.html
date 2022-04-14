@@ -6,9 +6,9 @@
   <div class="card" *ngFor="let card of cards">
     <img mat-card-image src="../assets/first.jpg">
     <div class="card-body">
-      <h1 class="card-title">{{card.name}}</h1>
+      <h1 class="card-title">{{card.name}} {{card.num}}</h1>
       <p class="card-content">{{card.content}}</p>
-      <a href="#" class="btn btn-secondary=">Edit recipe</a>
+      <a href="#" (click)="editrecipe('editpage', card.num, cards)" [routerLink]="['/editpage', card.num]"class="btn btn-secondary=">Edit recipe</a>
     </div>
   </div>
   <input ngModel required minlength="2" name="text" class="input" type="card">

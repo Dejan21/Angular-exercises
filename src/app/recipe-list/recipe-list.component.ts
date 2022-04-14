@@ -48,6 +48,9 @@ export class RecipeListComponent implements OnInit {
    goToPage(api:any): void{
       
    }
+
+   editrecipe(editpage: string ,id:number, cards:any): void {
+  }
   
   
 }

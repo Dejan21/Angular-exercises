@@ -1,1 +1,17 @@
-<p>editpage works!</p>
+<form class='container'>
+    <div class="form-group">
+        <label for="title">Title</label>
+         <input type="text" id='title' #title placeholder="{{card.name}} " class='form-control'  >
+    </div>
+
+    <pre></pre>
+    <div class="form-group">    
+       <label for="content">Content</label>
+       <input type="text " id='content' #content placeholder="{{card.content}}" class="form-control" required >
+    </div>
+
+    <pre></pre>
+    <button class='btn btn-dark' [routerLink]="['/recipelist']">Go back</button>
+    <button  class= 'btn btn-danger' (click)='edit()' >Edit Card</button>
+</form>
+<router-outlet></router-outlet>
