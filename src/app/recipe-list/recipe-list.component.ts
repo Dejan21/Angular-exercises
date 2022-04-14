@@ -16,9 +16,7 @@ import { Card } from '../shared/card.module';
 export class RecipeListComponent implements OnInit {
 
   cards: any;
-  playToggle=false;
   id: any | undefined;
-  myFunction:any
   isAuth=false;
 
 

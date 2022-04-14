@@ -8,16 +8,14 @@
     <div class="card-body">
       <h1 class="card-title">{{card.name}} {{card.num}}</h1>
       <p class="card-content">{{card.content}}</p>
-      <a href="#" (click)="editrecipe('editpage', card.num, cards)" [routerLink]="['/editpage', card.num]"class="btn btn-secondary=">Edit recipe</a>
+      <a href="#" (click)="editrecipe('editpage', card.num, cards)" [routerLink]="['/editpage', card.num]"
+        class="btn btn-secondary=">Edit recipe</a>
     </div>
   </div>
-  <input ngModel required minlength="2" name="text" class="input" type="card">
-  <button (click)="myFunction()" type="submit" [disabled]="isAuth" class="button alt-gradient-button">
-    <p>Add</p>
-  
+  <input ngModel  name="text" id="text"  type="card">
+  <button [disabled]="!isAuth" class="button alt-gradient-button">
+    <i class="material-icons">add</i>
+    <p> ADD</p>
   </button>
 </form>
 <button class="btn-primary" (click)="goToPage('api')" routerLink="./api">Next Page Api</button>
-
-
-
