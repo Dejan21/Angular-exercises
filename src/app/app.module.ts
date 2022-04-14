@@ -11,13 +11,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ApiComponent } from './api/api.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { EditpageComponent } from './editpage/editpage.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeListComponent,
-    ApiComponent
+    ApiComponent,
+    EditpageComponent
   ],
   imports: [
     BrowserModule,

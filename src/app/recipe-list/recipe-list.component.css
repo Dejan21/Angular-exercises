@@ -13,8 +13,22 @@
 .input{
     height: 5px;
     width: 180px; 
-    margin: 0 5px;
+    float: left;
+    padding: 27px;
 }
+
 p{
     margin: 29px 0px 12px 17px;
+    color: green;
+}
+.card{
+    border: 1px solid;
+    margin-top: 118px;
+    margin-left: 95px;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    float: left;
+    margin: -350px 100px;
 }

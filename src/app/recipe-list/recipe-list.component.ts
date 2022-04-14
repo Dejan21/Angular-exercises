@@ -12,19 +12,28 @@ import { Card } from '../shared/card.module';
 
 @Input("card_title")
 
+
 export class RecipeListComponent implements OnInit {
 
   cards: any;
   playToggle=false;
+  id: any | undefined;
+  myFunction:any
+  isAuth=false;
 
 
   constructor(private appService: AppService) { 
-   
+    setInterval(()=>{
+      this.isAuth=true;
+    },4000)
   }
 
   ngOnInit(): void {
     this.cards = this.appService.cards
+
+  
   }
+  
 
   onFormSubmit(form: NgForm){
     console.log('Form Submited');
@@ -34,6 +43,7 @@ export class RecipeListComponent implements OnInit {
 
   }
 
+    
 
    goToPage(api:any): void{
       

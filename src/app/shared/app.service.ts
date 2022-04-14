@@ -14,17 +14,18 @@ export class AppService {
     {
       name: 'cheesburger',
       num: 1,
-      content: 'hello first card'
+      content: 'Cheese , kecap, meat',
+      
     },
     {
       name: 'hamburger',
       num: 2,
-      content: 'hello second card'
+      content: 'Meat, mayonnaise'
     },
     {
-      name: 'third card',
+      name: 'BigMac',
       num: 3,
-      content: 'hello third card'
+      content: 'Double meat'
     },
   ]
 
