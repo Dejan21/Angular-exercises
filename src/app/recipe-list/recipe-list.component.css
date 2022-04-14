@@ -10,13 +10,12 @@
     opacity: 8px; 
 }
 
- #text{
-    height: 5px;
+ .text{
+    height: 20px;
     float: left;
     cursor: pointer;
-    padding: 5px 17px 17px -8px;
-    line-height: inherit;
     margin-top: 15px;
+    padding: 0 !important;
 }
 
 p{
